@@ -1,5 +1,5 @@
 // -----------------------------------------------------------------
-// Template Name: Affan - PWA Mobile HTML Template
+// Template Name: FrogBID - Web App
 // Template Author: Designing World
 // Template Author URL: https://themeforest.net/user/designing-world
 // Last Updated: 23 Dec, 2022
