@@ -129,38 +129,54 @@
     <div class="container">
         <div class="card card-bg-img bg-img bg-overlay mb-3" style="background-image: url('img/bg-img/3.jpg')">
             <div class="card-body direction-rtl p-4">
-                <h2 class="text-white text-center">ই-সেবা</h2>
+                <h2 class="text-white text-center">অভিযোগ</h2>
             </div>
         </div>
     </div>
 
     <div class="pt-3"></div>
 
-    <!-- Search Form -->
-    <div class="card">
-        <div class="card-body p-3">
-            <div class="form-group mb-0">
-                <input class="form-control" id="elementsSearchInput" onkeyup="elementsSearch()"
-                       placeholder="Search element..."
-                       type="text">
+    <div class="container direction-rtl">
+        <div class="card">
+            <div class="card-body">
+                <form action="">
+                    <div class="form-group text-start mb-3">
+                        <input class="form-control" placeholder="নাম *" type="text">
+                    </div>
+
+                    <div class="form-group text-start mb-3">
+                        <input class="form-control" placeholder="মোবাইল *" type="text">
+                    </div>
+
+                    <div class="form-group text-start mb-3">
+                        <input class="form-control" placeholder="নাম *" type="text">
+                    </div>
+
+                    <div class="form-group text-start mb-3">
+                        <input class="form-control" placeholder="জাতীয় পরিচয় পত্র নন্বর *" type="text">
+                    </div>
+
+                    <div class="form-group text-start mb-3">
+                        <input class="form-control" placeholder="ই-মেইল(ইংরেজিতে লিখুন) *" type="text">
+                    </div>
+
+                    <div class="form-group text-start mb-3">
+                        <textarea class="form-control" rows="4" placeholder="ঘটনার বিবরণ *"></textarea>
+                    </div>
+
+
+
+                    <div class="mb-3" id="pswmeter"></div>
+
+                    <div class="form-check mb-3">
+                        <input checked class="form-check-input" id="checkedCheckbox" type="checkbox" value="">
+                        <label class="form-check-label text-muted fw-normal" for="checkedCheckbox">* চিহ্নিত ঘর অবশ্যই পূরণ করতে হবে (আপনার তথ্য সম্পূর্ণরূপে গোপন রাখা হবে)।</label>
+                    </div>
+
+                    <button class="btn btn-primary w-100" type="submit">প্রেরণ  করুন</button>
+                </form>
             </div>
         </div>
-    </div>
-
-    <div class="container">
-        <div class="affan-element-item">
-            <div class="element-heading-wrapper">
-                <i class="bi bi-three-dots"></i>
-                <div class="heading-text">
-                    <h6 class="mb-1">ই-সেবা</h6>
-                </div>
-            </div>
-        </div>
-
-        <a class="affan-element-item" href="#">
-            ই-সেবা
-            <i class="bi bi-arrow-right"></i>
-        </a>
     </div>
 
     <div class="pb-3"></div>
