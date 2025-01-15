@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="FrogBID - Web App" name="description">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <meta content="#0134d4" name="theme-color">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+
+    <!-- Title -->
+    <title>FrogBID - Web App</title>
+
+    <!-- Favicon -->
+    <link href="img/core-img/favicon.ico" rel="icon">
+    <link href="img/icons/icon-96x96.png" rel="apple-touch-icon">
+    <link href="img/icons/icon-152x152.png" rel="apple-touch-icon" sizes="152x152">
+    <link href="img/icons/icon-167x167.png" rel="apple-touch-icon" sizes="167x167">
+    <link href="img/icons/icon-180x180.png" rel="apple-touch-icon" sizes="180x180">
+
+    <!-- Style CSS -->
+    <link href="style.css" rel="stylesheet">
+
+    <!-- Web App Manifest -->
+    <link href="manifest.json" rel="manifest">
+</head>
+
+<body>
+<!-- Preloader -->
+<div id="preloader">
+    <div class="spinner-grow text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+</div>
+
+<!-- Internet Connection Status -->
+<div class="internet-connection-status" id="internetStatus"></div>
+
+<!-- Header Area -->
+<div class="header-area" id="headerArea">
+    <div class="container">
+        <!-- Header Content -->
+        <div class="header-content header-style-five position-relative d-flex align-items-center justify-content-between">
+            <!-- Logo Wrapper -->
+            <div class="logo-wrapper">
+                <a href="home.html">
+                    <img alt="" src="img/core-img/logo.png">
+                </a>
+            </div>
+
+            <!-- Navbar Toggler -->
+            <div aria-controls="affanOffcanvas" class="navbar--toggler" data-bs-target="#affanOffcanvas"
+                 data-bs-toggle="offcanvas"
+                 id="affanNavbarToggler">
+                <span class="d-block"></span>
+                <span class="d-block"></span>
+                <span class="d-block"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- # Sidenav Left -->
+<div aria-labelledby="affanOffcanvsLabel" class="offcanvas offcanvas-start" data-bs-scroll="true" id="affanOffcanvas"
+     tabindex="-1">
+
+    <button aria-label="Close" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas"
+            type="button"></button>
+
+    <div class="offcanvas-body p-0">
+        <div class="sidenav-wrapper">
+            <!-- Sidenav Profile -->
+            <div class="sidenav-profile bg-gradient">
+                <div class="sidenav-style1"></div>
+
+                <!-- User Thumbnail -->
+                <div class="user-profile">
+                    <img alt="" src="img/bg-img/2.jpg">
+                </div>
+
+                <!-- User Info -->
+                <div class="user-info">
+                    <h6 class="user-name mb-0">FrogBiD</h6>
+                </div>
+            </div>
+
+            <!-- Sidenav Nav -->
+            <ul class="sidenav-nav ps-0">
+                <li>
+                    <a href="home.html"><i class="bi bi-house-door"></i> হোম
+                    </a>
+                </li>
+                <li>
+                    <a href="pages.html"><i class="bi bi-folder2-open"></i> ঘোষণা
+                    </a>
+                </li>
+                <li>
+                    <a href="elements.html"><i class="bi bi-heart"></i> অভিযোগ
+                    </a>
+                </li>
+                <li>
+                    <a href="settings.html"><i class="bi bi-gear"></i> সেটিংস</a>
+                </li>
+                <li>
+                    <div class="night-mode-nav">
+                        <i class="bi bi-moon"></i> ডার্ক মোড
+                        <div class="form-check form-switch">
+                            <input class="form-check-input form-check-success" id="darkSwitch" type="checkbox">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <!-- Copyright Info -->
+            <div class="copyright-info">
+                <p>
+                    <span id="copyrightYear"></span>
+                    &copy; Made by <a href="#"> FrogBID</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="page-content-wrapper">
+
+    <!-- Tiny Slider One Wrapper -->
+    <div class="container">
+        <div class="card card-bg-img bg-img bg-overlay mb-3" style="background-image: url('img/bg-img/3.jpg')">
+            <div class="card-body direction-rtl p-4">
+                <h2 class="text-white text-center">ই-সেবা</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="pt-3"></div>
+
+    <!-- Search Form -->
+    <div class="card">
+        <div class="card-body p-3">
+            <div class="form-group mb-0">
+                <input class="form-control" id="elementsSearchInput" onkeyup="elementsSearch()"
+                       placeholder="Search element..."
+                       type="text">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="affan-element-item">
+            <div class="element-heading-wrapper">
+                <i class="bi bi-three-dots"></i>
+                <div class="heading-text">
+                    <h6 class="mb-1">ই-সেবা</h6>
+                </div>
+            </div>
+        </div>
+
+        <a class="affan-element-item" href="#">
+            ই-সেবা
+            <i class="bi bi-arrow-right"></i>
+        </a>
+    </div>
+
+    <div class="pb-3"></div>
+</div>
+
+<!-- Footer Nav -->
+<div class="footer-nav-area" id="footerNav">
+    <div class="container px-0">
+        <!-- Footer Content -->
+        <div class="footer-nav position-relative">
+            <ul class="h-100 d-flex align-items-center justify-content-between ps-0">
+                <li class="active">
+                    <a href="home.html">
+                        <i class="bi bi-house"></i>
+                        <span>হোম</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="pages.html">
+                        <i class="bi bi-folder2-open"></i>
+                        <span>ঘোষণা</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="elements.html">
+                        <i class="bi bi-heart"></i>
+                        <span>অভিযোগ</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="settings.html">
+                        <i class="bi bi-gear"></i>
+                        <span>সেটিংস</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- All JavaScript Files -->
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/slideToggle.min.js"></script>
+<script src="js/internet-status.js"></script>
+<script src="js/tiny-slider.js"></script>
+<script src="js/venobox.min.js"></script>
+<script src="js/countdown.js"></script>
+<script src="js/rangeslider.min.js"></script>
+<script src="js/vanilla-dataTables.min.js"></script>
+<script src="js/index.js"></script>
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src="js/isotope.pkgd.min.js"></script>
+<script src="js/dark-rtl.js"></script>
+<script src="js/active.js"></script>
+<script src="js/pwa.js"></script>
+</body>
+</html>
