@@ -870,6 +870,7 @@ caption,
 
 .text-dark {
   color: var(--dark) !important;
+  text-align: justify;
 }
 
 .text-body {
