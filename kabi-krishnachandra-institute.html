@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="FrogBID - Web App" name="description">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <meta content="#0134d4" name="theme-color">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+
+    <!-- Title -->
+    <title>FrogBID - Web App</title>
+
+    <!-- Favicon -->
+    <link href="img/core-img/favicon.ico" rel="icon">
+    <link href="img/icons/icon-96x96.png" rel="apple-touch-icon">
+    <link href="img/icons/icon-152x152.png" rel="apple-touch-icon" sizes="152x152">
+    <link href="img/icons/icon-167x167.png" rel="apple-touch-icon" sizes="167x167">
+    <link href="img/icons/icon-180x180.png" rel="apple-touch-icon" sizes="180x180">
+
+    <!-- Style CSS -->
+    <link href="style.css" rel="stylesheet">
+
+</head>
+
+<body>
+<!-- Preloader -->
+<div id="preloader">
+    <div class="spinner-grow text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+</div>
+
+<!-- Internet Connection Status -->
+<div class="internet-connection-status" id="internetStatus"></div>
+
+<!-- Header Area -->
+<div class="header-area" id="headerArea">
+    <div class="container">
+        <!-- Header Content -->
+        <div class="header-content header-style-five position-relative d-flex align-items-center justify-content-between">
+            <!-- Logo Wrapper -->
+            <div class="logo-wrapper">
+                <a href="index.html">
+                    <img alt="" src="img/core-img/logo.png">
+                </a>
+            </div>
+
+            <!-- Navbar Toggler -->
+            <div aria-controls="affanOffcanvas" class="navbar--toggler" data-bs-target="#affanOffcanvas"
+                 data-bs-toggle="offcanvas"
+                 id="affanNavbarToggler">
+                <span class="d-block"></span>
+                <span class="d-block"></span>
+                <span class="d-block"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- # Sidenav Left -->
+<div aria-labelledby="affanOffcanvsLabel" class="offcanvas offcanvas-start" data-bs-scroll="true" id="affanOffcanvas"
+     tabindex="-1">
+
+    <button aria-label="Close" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas"
+            type="button"></button>
+
+    <div class="offcanvas-body p-0">
+        <div class="sidenav-wrapper">
+            <!-- Sidenav Profile -->
+            <div class="sidenav-profile bg-gradient">
+                <div class="sidenav-style1"></div>
+
+
+
+                <!-- User Info -->
+                <div class="user-info">
+                    <h6 class="user-name mb-0">FrogBiD</h6>
+                </div>
+            </div>
+
+            <!-- Sidenav Nav -->
+            <ul class="sidenav-nav ps-0">
+                <li>
+                    <a href="index.html"><i class="bi bi-house-door"></i> হোম
+                    </a>
+                </li>
+                <li>
+                    <a href="announcement.html"><i class="bi bi-megaphone"></i> ঘোষণা
+                    </a>
+                </li>
+                <li>
+                    <a href="complain.html"><i class="bi bi-plus-circle-dotted"></i> অভিযোগ
+                    </a>
+                </li>
+                <li>
+                    <a href="settings.html"><i class="bi bi-gear"></i> সেটিংস</a>
+                </li>
+                <li>
+                    <div class="night-mode-nav">
+                        <i class="bi bi-moon"></i> ডার্ক মোড
+                        <div class="form-check form-switch">
+                            <input class="form-check-input form-check-success" id="darkSwitch" type="checkbox">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <!-- Copyright Info -->
+            <div class="copyright-info">
+                <p>
+                    <span id="copyrightYear"></span>
+                    &copy; Made by <a href="#"> FrogBID</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="page-content-wrapper">
+
+    <div class="pt-3"></div>
+
+    <!-- Tiny Slider One Wrapper -->
+    <div class="container">
+        <div class="card card-bg-img bg-img bg-overlay mb-3 mt-2" style="background-image: url('img/bg-img/3.jpg')">
+            <div class="card-body direction-rtl p-4">
+                <h2 class="text-white text-center">পর্যটন স্থান</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="pt-3"></div>
+
+    <!-- Search Form -->
+    <div class="card">
+        <div class="card-body p-3">
+            <div class="form-group mb-0">
+                <input class="form-control" id="elementsSearchInput" onkeyup="elementsSearch()"
+                       placeholder="Search element..."
+                       type="text">
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-3">
+        <div class="card bg-white mb-3 bg-img" style="background-image: url('img/core-img/1.png')">
+            <div class="card-body direction-rtl p-4">
+                <h2 class="text-dark">কবি কৃষ্ণচন্দ্র ইনস্টিটিউট</h2>
+                <img src="data:image/jpeg;base64,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" alt="" class="img-fluid mb-3 mt-3"/>
+                <p class="mb-3 text-dark">
+                    <strong>Location</strong><br/>
+                    দিঘলিয়া
+                </p>
+                <p class="mb-3 text-dark">
+                    <strong>Transportation</strong><br/>
+                    খুলনা থেকে বাসে দিঘলিয়া যাবার পথে নদী পারাপার হয়ে স্থানীয় যানবাহন পাওয়া যায়
+                </p>
+                <p class="mb-3 text-dark">
+                    <strong>Details</strong><br/>
+                    খুলনা জেলার দিঘলিয়া উপজেলার সেনহাটি গ্রাম কবি কৃষ্ণচন্দ্র মজুমদারের জন্মস্থান। বাংলা সাহিত্যে কবির ‘দুটি কবিতা’ শীর্ষক ক্ষু্দ্র কবিতাটি কালজয়ী স্থান পেয়েছে। ‘যে জন দিবসে মনের হরষে জ্বালায় মোমের বাতি’ কিংবা ‘চিরসুখী জন ভ্রমে কি কখন ব্যথিত বেদন বূঝিতে পারে’ কবিতা বাঙালি জীবনে অবশ্যপাঠ্য হিসেবে বিবেচিত।
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="pb-3"></div>
+</div>
+
+<!-- Footer Nav -->
+<div class="footer-nav-area" id="footerNav">
+    <div class="container px-0">
+        <!-- Footer Content -->
+        <div class="footer-nav position-relative">
+            <ul class="h-100 d-flex align-items-center justify-content-between ps-0">
+                <li class="active">
+                    <a href="index.html">
+                        <i class="bi bi-house"></i>
+                        <span>হোম</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="announcement.html">
+                        <i class="bi bi-megaphone"></i>
+                        <span>ঘোষণা</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="complain.html">
+                        <i class="bi bi-plus-circle-dotted"></i>
+                        <span>অভিযোগ</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="settings.html">
+                        <i class="bi bi-gear"></i>
+                        <span>সেটিংস</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- All JavaScript Files -->
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/slideToggle.min.js"></script>
+<script src="js/internet-status.js"></script>
+<script src="js/tiny-slider.js"></script>
+<script src="js/venobox.min.js"></script>
+<script src="js/countdown.js"></script>
+<script src="js/rangeslider.min.js"></script>
+<script src="js/vanilla-dataTables.min.js"></script>
+<script src="js/index.js"></script>
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src="js/isotope.pkgd.min.js"></script>
+<script src="js/dark-rtl.js"></script>
+<script src="js/active.js"></script>
+<script src="js/pwa.js"></script>
+</body>
+</html>
