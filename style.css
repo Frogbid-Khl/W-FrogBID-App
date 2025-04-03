@@ -870,6 +870,7 @@ caption,
 
 .text-dark {
   color: var(--dark) !important;
+  text-align: justify;
 }
 
 .text-body {
@@ -8753,4 +8754,9 @@ form .btn-lg {
 }
 [data-theme=dark] .single-plan-check {
   border-color: rgba(255, 255, 255, 0.1);
+}
+
+.card.mb-3.h-100 h2{
+  font-size: 12px;
+  line-height: 24px;
 }

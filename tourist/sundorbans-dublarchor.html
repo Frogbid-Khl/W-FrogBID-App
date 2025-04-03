@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="FrogBID - Web App" name="description">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+  <meta content="#0134d4" name="theme-color">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="black" name="apple-mobile-web-app-status-bar-style">
+
+  <!-- Title -->
+  <title>FrogBID - Web App</title>
+
+  <!-- Favicon -->
+  <link href="../img/core-img/favicon.ico" rel="icon">
+  <link href="../img/icons/icon-96x96.png" rel="apple-touch-icon">
+  <link href="../img/icons/icon-152x152.png" rel="apple-touch-icon" sizes="152x152">
+  <link href="../img/icons/icon-167x167.png" rel="apple-touch-icon" sizes="167x167">
+  <link href="../img/icons/icon-180x180.png" rel="apple-touch-icon" sizes="180x180">
+
+  <!-- Style CSS -->
+  <link href="../style.css" rel="stylesheet">
+
+</head>
+
+<body>
+<!-- Preloader -->
+<div id="preloader">
+  <div class="spinner-grow text-primary" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+</div>
+
+<!-- Internet Connection Status -->
+<div class="internet-connection-status" id="internetStatus"></div>
+
+<!-- Header Area -->
+<div class="header-area" id="headerArea">
+  <div class="container">
+    <!-- Header Content -->
+    <div class="header-content header-style-five position-relative d-flex align-items-center justify-content-between">
+      <!-- Logo Wrapper -->
+      <div class="logo-wrapper">
+        <a href="../index.html">
+          <img alt="" src="../img/core-img/logo.png">
+        </a>
+      </div>
+
+      <!-- Navbar Toggler -->
+      <div aria-controls="affanOffcanvas" class="navbar--toggler" data-bs-target="#affanOffcanvas"
+           data-bs-toggle="offcanvas"
+           id="affanNavbarToggler">
+        <span class="d-block"></span>
+        <span class="d-block"></span>
+        <span class="d-block"></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- # Sidenav Left -->
+<div aria-labelledby="affanOffcanvsLabel" class="offcanvas offcanvas-start" data-bs-scroll="true" id="affanOffcanvas"
+     tabindex="-1">
+
+  <button aria-label="Close" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas"
+          type="button"></button>
+
+  <div class="offcanvas-body p-0">
+    <div class="sidenav-wrapper">
+      <!-- Sidenav Profile -->
+      <div class="sidenav-profile bg-gradient">
+        <div class="sidenav-style1"></div>
+
+
+
+        <!-- User Info -->
+        <div class="user-info">
+          <h6 class="user-name mb-0">FrogBiD</h6>
+        </div>
+      </div>
+
+      <!-- Sidenav Nav -->
+      <ul class="sidenav-nav ps-0">
+        <li>
+          <a href="../index.html"><i class="bi bi-house-door"></i> হোম
+          </a>
+        </li>
+        <li>
+          <a href="../announcement.html"><i class="bi bi-megaphone"></i> ঘোষণা
+          </a>
+        </li>
+        <li>
+          <a href="../complain.html"><i class="bi bi-plus-circle-dotted"></i> অভিযোগ
+          </a>
+        </li>
+        <li>
+          <a href="../settings.html"><i class="bi bi-gear"></i> সেটিংস</a>
+        </li>
+        <li>
+          <div class="night-mode-nav">
+            <i class="bi bi-moon"></i> ডার্ক মোড
+            <div class="form-check form-switch">
+              <input class="form-check-input form-check-success" id="darkSwitch" type="checkbox">
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <!-- Copyright Info -->
+      <div class="copyright-info">
+        <p>
+          <span id="copyrightYear"></span>
+          &copy; Made by <a href="#"> FrogBID</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-content-wrapper">
+
+  <div class="pt-3"></div>
+
+  <!-- Tiny Slider One Wrapper -->
+  <div class="container">
+    <div class="card card-bg-img bg-img bg-overlay mb-3 mt-2" style="background-image: url('../img/bg-img/3.jpg')">
+      <div class="card-body direction-rtl p-4">
+        <h2 class="text-white text-center">পর্যটন স্থান</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="pt-3"></div>
+
+
+
+  <div class="container mt-3">
+    <div class="card bg-white mb-3 bg-img" style="background-image: url('../img/core-img/1.png')">
+      <div class="card-body direction-rtl p-4">
+        <h2 class="text-dark">সুন্দরবনের দুবলার চর</h2>
+        <img src="../img/tourist/11.webp" alt="" class="img-fluid mb-3 mt-3"/>
+        <p class="mb-3 text-dark">
+          <strong>স্থান</strong><br/>
+          বাগেরহাট
+        </p>
+        <p class="mb-3 text-dark">
+          <strong> যাতায়াতের পদ্ধতি </strong><br/>
+          নদী পথে : খুলনা লঞ্চঘাট খেকে লঞ্চযোগে সুন্দরবনের দুবলার চর যাওয়া যাবে। রাতে ও সকালে লঞ্চ রয়েছে।
+        </p>
+        <p class="mb-3 text-dark">
+          <strong> বিস্তারিত </strong><br/>
+          চাঁদপাই রেঞ্জের আরেকটি গুরুত্বপূর্ণ জায়গা দুবলার চর। কুঙ্গা ও মরা পশুর নদের মাঝে দুবলা একটি বিচ্ছিন্ন দ্বীপ। এখানে লাল বুক মাছরাঙা, মদনটাক পাখির দেখা মেলে। এখানকার সৌন্দর্যের একটি দিক হচ্ছে হরিণের ঘাস খাবার দৃশ্য। দুবলার চর মূলত জেলে গ্রাম। মাছ ধরার সঙ্গে চলে শুঁটকি শোকানোর কাজ। বর্ষা মৌসুমের ইলিশ শিকারের পর বহু জেলে চার মাসের জন্য সুদূর কক্সবাজার, চট্টগ্রাম, বাগেরহাট, পিরোজপুর, খুলনা, সাতক্ষীরা থেকে ডেরা বেঁধে সাময়িক বসতি গড়ে সেখানে। মেহেরআলীর খাল, আলোরকোল, মাঝেরচর, অফিসকেল্লা, নারিকেলবাড়িয়া, মানিকখালী, ছাফরাখালী ও শ্যালারচর ইত্যাদি এলাকায় জেলে পল্লী স্থাপিত হয়। এই চার মাস তারা মাছকে শুঁটকি বানাতে ব্যস্ত থাকেন। এখান থেকে আহরিত শুঁটকি চট্টগ্রামের আসাদগঞ্জের পাইকারী বাজারে মজুদ ও বিক্রয় করা হয়। সুন্দরবনের পূর্ব বিভাগের সদর দপ্তর বাগেরহাট থেকে মাছ সংগ্রহের পূর্বানুমতিসাপেক্ষে বহরদার ও জেলেরা দুবলার চরে প্রবেশ করে থাকেন। দুবলার চর থেকে সরকার নিয়মিত হারে রাজস্ব পেয়ে থাকে। প্রতি বছর বিএলসি বা বোট লাইসেন্স সার্টিফিকেট, ডিএফসি বা ডেইলি ফুয়েল (জ্বালানি কাঠ) কঞ্জামশন ইত্যাদি প্রক্রিয়ায় বন বিভাগকে রাজস্ব প্রদান করে মৎস্য ব্যবসায়ীগণ সুন্দরবনে ঢোকার অনুমতি পান, এছাড়া আহরিত শুঁটকি মাছ পরিমাপ করে নিয়ে ফিরে আসার সময় মাছভেদে প্রদান করেন নির্ধারিত রাজস্ব।
+<br/>
+          প্রতি বছর কার্তিক মাসে (খ্রিস্টীয় নভেম্বর) হিন্দু ধর্মাবলম্বীদের রাসমেলা এবং পূণ্যস্নানের জন্যও দ্বীপটি বিখ্যাত। যদিও বলা হয়ে থাকে, ২০০ বছর ধরে এ রাসমেলা হয়ে চলেছে , তবে জানা যায়, ১৯২৩ খ্রিস্টাব্দে হরিচাঁদ ঠাকুরের এক বনবাসী ভক্ত, নাম হরিভজন (১৮২৯—১৯২৩), এই মেলা চালু করেন। প্রতিবছর অসংখ্য পুণ্যার্থী রাসপূর্ণিমাকে উপলক্ষ করে এখানে সমুদ্রস্নান করতে আসেন। দুবলার চরে সূর্যোদয় দেখে ভক্তরা সমুদ্রের জলে ফল ভাসিয়ে দেন। কেউবা আবার বাদ্যযন্ত্র বাজিয়ে ভজন-কীর্তন গেয়ে মুখরিত করেন চারপাশ। দুবলার চরের রাসমেলায় স্থানীয় লোকজন ছাড়াও দূর-দূরান্তের শহরবাসী এমনকি বিদেশি পর্যটকেরাও স্বতঃস্ফূর্তভাবে অংশ নিয়ে থাকেন। তিনদিনব্যাপী এ মেলায় অনেক বিদেশী পর্যটকেরও সমাগম হয়।
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="pb-3"></div>
+</div>
+
+<!-- Footer Nav -->
+<div class="footer-nav-area" id="footerNav">
+  <div class="container px-0">
+    <!-- Footer Content -->
+    <div class="footer-nav position-relative">
+      <ul class="h-100 d-flex align-items-center justify-content-between ps-0">
+        <li class="active">
+          <a href="../index.html">
+            <i class="bi bi-house"></i>
+            <span>হোম</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="../announcement.html">
+            <i class="bi bi-megaphone"></i>
+            <span>ঘোষণা</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="../complain.html">
+            <i class="bi bi-plus-circle-dotted"></i>
+            <span>অভিযোগ</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="../settings.html">
+            <i class="bi bi-gear"></i>
+            <span>সেটিংস</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- All JavaScript Files -->
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/slideToggle.min.js"></script>
+<script src="../js/internet-status.js"></script>
+<script src="../js/tiny-slider.js"></script>
+<script src="../js/venobox.min.js"></script>
+<script src="../js/countdown.js"></script>
+<script src="../js/rangeslider.min.js"></script>
+<script src="../js/vanilla-dataTables.min.js"></script>
+<script src="../js/index.js"></script>
+<script src="../js/imagesloaded.pkgd.min.js"></script>
+<script src="../js/isotope.pkgd.min.js"></script>
+<script src="../js/dark-rtl.js"></script>
+<script src="../js/active.js"></script>
+<script src="../js/pwa.js"></script>
+</body>
+</html>
