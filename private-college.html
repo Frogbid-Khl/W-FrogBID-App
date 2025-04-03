@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="FrogBID - Web App" name="description">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <meta content="#0134d4" name="theme-color">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+
+    <!-- Title -->
+    <title>FrogBID - Web App</title>
+
+    <!-- Favicon -->
+    <link href="img/core-img/favicon.ico" rel="icon">
+    <link href="img/icons/icon-96x96.png" rel="apple-touch-icon">
+    <link href="img/icons/icon-152x152.png" rel="apple-touch-icon" sizes="152x152">
+    <link href="img/icons/icon-167x167.png" rel="apple-touch-icon" sizes="167x167">
+    <link href="img/icons/icon-180x180.png" rel="apple-touch-icon" sizes="180x180">
+
+    <!-- Style CSS -->
+    <link href="style.css" rel="stylesheet">
+
+    <style>
+        .row>*{
+            margin-top: unset !important;
+        }
+
+        .card.mb-3.h-100{
+            height: 145px !important;
+        }
+
+        .card.mb-3.h-100 h2{
+            font-size: 12px;
+            line-height: 24px;
+        }
+    </style>
+
+</head>
+
+<body>
+<!-- Preloader -->
+<div id="preloader">
+    <div class="spinner-grow text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+</div>
+
+<!-- Internet Connection Status -->
+<div class="internet-connection-status" id="internetStatus"></div>
+
+<!-- Header Area -->
+<div class="header-area" id="headerArea">
+    <div class="container">
+        <!-- Header Content -->
+        <div class="header-content header-style-five position-relative d-flex align-items-center justify-content-between">
+            <!-- Logo Wrapper -->
+            <div class="logo-wrapper">
+                <a href="index.html">
+                    <img alt="" src="img/core-img/logo.png">
+                </a>
+            </div>
+
+            <!-- Navbar Toggler -->
+            <div aria-controls="affanOffcanvas" class="navbar--toggler" data-bs-target="#affanOffcanvas"
+                 data-bs-toggle="offcanvas"
+                 id="affanNavbarToggler">
+                <span class="d-block"></span>
+                <span class="d-block"></span>
+                <span class="d-block"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- # Sidenav Left -->
+<div aria-labelledby="affanOffcanvsLabel" class="offcanvas offcanvas-start" data-bs-scroll="true" id="affanOffcanvas"
+     tabindex="-1">
+
+    <button aria-label="Close" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas"
+            type="button"></button>
+
+    <div class="offcanvas-body p-0">
+        <div class="sidenav-wrapper">
+            <!-- Sidenav Profile -->
+            <div class="sidenav-profile bg-gradient">
+                <div class="sidenav-style1"></div>
+
+
+
+                <!-- User Info -->
+                <div class="user-info">
+                    <h6 class="user-name mb-0">FrogBiD</h6>
+                </div>
+            </div>
+
+            <!-- Sidenav Nav -->
+            <ul class="sidenav-nav ps-0">
+                <li>
+                    <a href="index.html"><i class="bi bi-house-door"></i> হোম
+                    </a>
+                </li>
+                <li>
+                    <a href="announcement.html"><i class="bi bi-megaphone"></i> ঘোষণা
+                    </a>
+                </li>
+                <li>
+                    <a href="complain.html"><i class="bi bi-plus-circle-dotted"></i> অভিযোগ
+                    </a>
+                </li>
+                <li>
+                    <a href="settings.html"><i class="bi bi-gear"></i> সেটিংস</a>
+                </li>
+                <li>
+                    <div class="night-mode-nav">
+                        <i class="bi bi-moon"></i> ডার্ক মোড
+                        <div class="form-check form-switch">
+                            <input class="form-check-input form-check-success" id="darkSwitch" type="checkbox">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <!-- Copyright Info -->
+            <div class="copyright-info">
+                <p>
+                    <span id="copyrightYear"></span>
+                    &copy; Made by <a href="#"> FrogBID</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="page-content-wrapper">
+
+    <div class="pt-3"></div>
+
+    <!-- Tiny Slider One Wrapper -->
+    <div class="container">
+        <div class="card card-bg-img bg-img bg-overlay mb-3 mt-2" style="background-image: url('img/bg-img/3.jpg')">
+            <div class="card-body direction-rtl p-4">
+                <h2 class="text-white text-center">বেসরকারি স্কুল</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="pt-3"></div>
+
+    <div class="container direction-rtl">
+        <div class="card">
+            <div class="card-body">
+                <div class="row g-3">
+                    <div class="col-6">
+                        <a href="educational-institutions/shahid-soherawardy-college-khulna.html">
+                            <div class="card bg-primary mb-3 bg-img h-100" style="background-image: url('img/core-img/1.png')">
+                                <div class="card-body direction-rtl p-4 d-flex align-items-center justify-content-center text-center">
+                                    <h2 class="text-white">শহীদ সোহরাওয়ার্দী কলেজ খুলনা</h2>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-6">
+                        <a href="educational-institutions/islamia-degree-college-boyra-khulna.html">
+                            <div class="card bg-primary mb-3 bg-img h-100" style="background-image: url('img/core-img/1.png')">
+                                <div class="card-body direction-rtl p-4 d-flex align-items-center justify-content-center text-center">
+                                    <h2 class="text-white">ইসলামিয়া ডিগ্রি কলেজ, বয়রা, খুলনা</h2>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-6">
+                        <a href="educational-institutions/khulna-college.html">
+                            <div class="card bg-primary mb-3 bg-img h-100" style="background-image: url('img/core-img/1.png')">
+                                <div class="card-body direction-rtl p-4 d-flex align-items-center justify-content-center text-center">
+                                    <h2 class="text-white">খুলনা কলেজ</h2>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-6">
+                        <a href="educational-institutions/doultpur-college-day-night-doultpur-khulna.html">
+                            <div class="card bg-primary mb-3 bg-img h-100" style="background-image: url('img/core-img/1.png')">
+                                <div class="card-body direction-rtl p-4 d-flex align-items-center justify-content-center text-center">
+                                    <h2 class="text-white">দৌলতপুর কলেজ (দিবা/নৈশ), দৌলতপুর, খুলনা</h2>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-6">
+                        <a href="educational-institutions/dumuria-college-dumuria-khulna.html">
+                            <div class="card bg-primary mb-3 bg-img h-100" style="background-image: url('img/core-img/1.png')">
+                                <div class="card-body direction-rtl p-4 d-flex align-items-center justify-content-center text-center">
+                                    <h2 class="text-white">ডুমুরিয়া কলেজ, ডুমুরিয়া, খুলনা</h2>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-6">
+                        <a href="educational-institutions/ahsanullah-college-honours-kda-ava-khulna.html">
+                            <div class="card bg-primary mb-3 bg-img h-100" style="background-image: url('img/core-img/1.png')">
+                                <div class="card-body direction-rtl p-4 d-flex align-items-center justify-content-center text-center">
+                                    <h2 class="text-white">আহসানউল্লাহ কলেজ (অনার্স), কেডিএ এভিএ, খুলনা</h2>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-6">
+                        <a href="educational-institutions/jahanabad-cantonment-public-school-college-gilatola-khulna.html">
+                            <div class="card bg-primary mb-3 bg-img h-100" style="background-image: url('img/core-img/1.png')">
+                                <div class="card-body direction-rtl p-4 d-flex align-items-center justify-content-center text-center">
+                                    <h2 class="text-white">জাহানাবাদ ক্যান্টনমেন্ট পাবলিক স্কুল অ্যান্ড কলেজ, ক্যান্টনমেন্ট, গিলাতোলা, খুলনা</h2>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-6">
+                        <a href="educational-institutions/sabrunessa-girls-college-gagan-babu-road-khulna.html">
+                            <div class="card bg-primary mb-3 bg-img h-100" style="background-image: url('img/core-img/1.png')">
+                                <div class="card-body direction-rtl p-4 d-flex align-items-center justify-content-center text-center">
+                                    <h2 class="text-white">সাবুরুনেসা গার্লস কলেজ, গগন বাবু রোড, খুলনা</h2>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-6">
+                        <a href="educational-institutions/sarwar-khan-degree-college-dighalia-khulna.html">
+                            <div class="card bg-primary mb-3 bg-img h-100" style="background-image: url('img/core-img/1.png')">
+                                <div class="card-body direction-rtl p-4 d-flex align-items-center justify-content-center text-center">
+                                    <h2 class="text-white">সারওয়ার খান ডিগ্রি কলেজ, (দিঘলিয়া), খুলনা</h2>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-6">
+                        <a href="educational-institutions/khulna-public-college-boyra-khulna.html">
+                            <div class="card bg-primary mb-3 bg-img h-100" style="background-image: url('img/core-img/1.png')">
+                                <div class="card-body direction-rtl p-4 d-flex align-items-center justify-content-center text-center">
+                                    <h2 class="text-white">খুলনা পাবলিক কলেজ, বয়রা, খুলনা</h2>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-6">
+                        <a href="educational-institutions/khulna-model-school-college-boyra-khulna.html">
+                            <div class="card bg-primary mb-3 bg-img h-100" style="background-image: url('img/core-img/1.png')">
+                                <div class="card-body direction-rtl p-4 d-flex align-items-center justify-content-center text-center">
+                                    <h2 class="text-white">খুলনা মডেল স্কুল অ্যান্ড কলেজ, বয়রা, খুলনা</h2>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-6">
+                        <a href="educational-institutions/bangladesh-navy-school-college-goalkhali-khulna.html">
+                            <div class="card bg-primary mb-3 bg-img h-100" style="background-image: url('img/core-img/1.png')">
+                                <div class="card-body direction-rtl p-4 d-flex align-items-center justify-content-center text-center">
+                                    <h2 class="text-white">বাংলাদেশ নৌবাহিনী স্কুল এন্ড কলেজ, গোয়ালখালী, খুলনা</h2>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-6">
+                        <a href="educational-institutions/khulna-collegiate-girls-school-college-rousa-khulna.html">
+                            <div class="card bg-primary mb-3 bg-img h-100" style="background-image: url('img/core-img/1.png')">
+                                <div class="card-body direction-rtl p-4 d-flex align-items-center justify-content-center text-center">
+                                    <h2 class="text-white">খুলনা কলেজিয়েট গার্লস স্কুল অ্যান্ড কলেজ, রূপসা, খুলনা</h2>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-6">
+                        <a href="educational-institutions/rayrahmal-degree-college-rayhrohol-khulna.html">
+                            <div class="card bg-primary mb-3 bg-img h-100" style="background-image: url('img/core-img/1.png')">
+                                <div class="card-body direction-rtl p-4 d-flex align-items-center justify-content-center text-center">
+                                    <h2 class="text-white">রায়রহমল ডিগ্রি কলেজ, রায়হরহোল, খুলনা</h2>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-6">
+                        <a href="educational-institutions/bajuya-sn-college-dakop-khulna.html">
+                            <div class="card bg-primary mb-3 bg-img h-100" style="background-image: url('img/core-img/1.png')">
+                                <div class="card-body direction-rtl p-4 d-flex align-items-center justify-content-center text-center">
+                                    <h2 class="text-white">বাজুয়া এসএন কলেজ - দাকোপ, খুলনা</h2>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-6">
+                        <a href="educational-institutions/shahid-smriti-mahila-college-dumuria.html">
+                            <div class="card bg-primary mb-3 bg-img h-100" style="background-image: url('img/core-img/1.png')">
+                                <div class="card-body direction-rtl p-4 d-flex align-items-center justify-content-center text-center">
+                                    <h2 class="text-white">শহীদ স্মৃতি মহিলা কলেজ, ডুমুরিয়া</h2>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-6">
+                        <a href="educational-institutions/rousa-college-east-rousa-khulna.html">
+                            <div class="card bg-primary mb-3 bg-img h-100" style="background-image: url('img/core-img/1.png')">
+                                <div class="card-body direction-rtl p-4 d-flex align-items-center justify-content-center text-center">
+                                    <h2 class="text-white">রূপসা কলেজ, পূর্ব রূপসা, খুলনা</h2>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-6">
+                        <a href="educational-institutions/goriyardanga-adarsha-college-batiaghata-khulna.html">
+                            <div class="card bg-primary mb-3 bg-img h-100" style="background-image: url('img/core-img/1.png')">
+                                <div class="card-body direction-rtl p-4 d-flex align-items-center justify-content-center text-center">
+                                    <h2 class="text-white">গরিয়ারডাঙা আদর্শ কলেজ, বটিয়াঘাটা, খুলনা</h2>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-6">
+                        <a href="educational-institutions/south-east-engineering-college-khulna.html">
+                            <div class="card bg-primary mb-3 bg-img h-100" style="background-image: url('img/core-img/1.png')">
+                                <div class="card-body direction-rtl p-4 d-flex align-items-center justify-content-center text-center">
+                                    <h2 class="text-white">সাউথ ইস্ট ইঞ্জিনিয়ারিং কলেজ, খুলনা (রাজশাহী বিশ্ববিদ্যালয় অধিভুক্ত)</h2>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-6">
+                        <a href="educational-institutions/laila-azad-mahabidyalay-bagerhat.html">
+                            <div class="card bg-primary mb-3 bg-img h-100" style="background-image: url('img/core-img/1.png')">
+                                <div class="card-body direction-rtl p-4 d-flex align-items-center justify-content-center text-center">
+                                    <h2 class="text-white">লায়লা আজাদ মহাবিদ্যালয়, বাগেরহাট</h2>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-6">
+                        <a href="educational-institutions/maulana-bhasani-memorial-degree-college-baniakhali-dumuria-khulna.html">
+                            <div class="card bg-primary mb-3 bg-img h-100" style="background-image: url('img/core-img/1.png')">
+                                <div class="card-body direction-rtl p-4 d-flex align-items-center justify-content-center text-center">
+                                    <h2 class="text-white">মাওলানা ভাসানী মেমোরিয়াল (ডিগ্রি) কলেজ বানিয়াখালি, ডুমুরিয়া, খুলনা</h2>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-6">
+                        <a href="educational-institutions/khanzahan-ali-adarsha-mahabidyalay-shirmoni-khulna.html">
+                            <div class="card bg-primary mb-3 bg-img h-100" style="background-image: url('img/core-img/1.png')">
+                                <div class="card-body direction-rtl p-4 d-flex align-items-center justify-content-center text-center">
+                                    <h2 class="text-white">খানজাহান আলী আদর্শ মহাবিদ্যালয়, শিরোমনি, ফুলতলা, খুলনা</h2>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-6">
+                        <a href="educational-institutions/fulatla-mojam-maholdar-college-fulatla-khulna.html">
+                            <div class="card bg-primary mb-3 bg-img h-100" style="background-image: url('img/core-img/1.png')">
+                                <div class="card-body direction-rtl p-4 d-flex align-items-center justify-content-center text-center">
+                                    <h2 class="text-white">ফুলতলা মোজাম মহলদার কলেজ, ফুলতলা, খুলনা</h2>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="pb-3"></div>
+</div>
+
+<!-- Footer Nav -->
+<div class="footer-nav-area" id="footerNav">
+    <div class="container px-0">
+        <!-- Footer Content -->
+        <div class="footer-nav position-relative">
+            <ul class="h-100 d-flex align-items-center justify-content-between ps-0">
+                <li class="active">
+                    <a href="index.html">
+                        <i class="bi bi-house"></i>
+                        <span>হোম</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="announcement.html">
+                        <i class="bi bi-megaphone"></i>
+                        <span>ঘোষণা</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="complain.html">
+                        <i class="bi bi-plus-circle-dotted"></i>
+                        <span>অভিযোগ</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="settings.html">
+                        <i class="bi bi-gear"></i>
+                        <span>সেটিংস</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- All JavaScript Files -->
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/slideToggle.min.js"></script>
+<script src="js/internet-status.js"></script>
+<script src="js/tiny-slider.js"></script>
+<script src="js/venobox.min.js"></script>
+<script src="js/countdown.js"></script>
+<script src="js/rangeslider.min.js"></script>
+<script src="js/vanilla-dataTables.min.js"></script>
+<script src="js/index.js"></script>
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src="js/isotope.pkgd.min.js"></script>
+<script src="js/dark-rtl.js"></script>
+<script src="js/active.js"></script>
+<script src="js/pwa.js"></script>
+</body>
+</html>
